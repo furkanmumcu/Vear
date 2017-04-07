@@ -29,7 +29,7 @@ public class MyRecordingsActivity extends AppCompatActivity {
 
 
         /* Path handling */
-        String path = Environment.getExternalStorageDirectory().toString()+"/AudioRecorder"; 
+        String path = Environment.getExternalStorageDirectory().toString()+"/AudioRecorder"; //Change
         String[] parts = getRecordingNames(path);
         System.out.println(Arrays.toString(parts));
 
