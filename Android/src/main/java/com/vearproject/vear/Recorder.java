@@ -22,10 +22,11 @@ public class Recorder {
 
     private static final int RECORDER_BPP = 16;
     private static final String AUDIO_RECORDER_FILE_EXT_WAV = ".wav";
-    private static final String AUDIO_RECORDER_FOLDER = "MyRecordings";
-    private static final String AUDIO_RECORDER_TEMP_FILE = "record_temp.raw";
-    private int RECORDER_SAMPLERATE = 11025; //44100 22050 11025 8000
+    private   String AUDIO_RECORDER_FOLDER = "MyRecordings";
+    private   String AUDIO_RECORDER_TEMP_FILE = "record_temp.raw";
+    private int RECORDER_SAMPLERATE = 44100; //44100 22050 11025 8000
     private int RECORDER_CHANNELS = AudioFormat.CHANNEL_IN_STEREO;
+    //private int RECORDER_CHANNELS = AudioFormat.CHANNEL_IN_MONO;
     private int RECORDER_AUDIO_ENCODING = AudioFormat.ENCODING_PCM_16BIT;
 
     private AudioRecord recorder = null;
@@ -33,6 +34,18 @@ public class Recorder {
     private Thread recordingThread = null;
     private boolean isRecording = false;
     private String wavname;
+
+    public void setAUDIO_RECORDER_TEMP_FILE(String AUDIO_RECORDER_TEMP_FILE) {
+        this.AUDIO_RECORDER_TEMP_FILE = AUDIO_RECORDER_TEMP_FILE;
+    }
+
+    public String getAudioRecorderFolder() {
+        return AUDIO_RECORDER_FOLDER;
+    }
+
+    public void setAUDIO_RECORDER_FOLDER(String AUDIO_RECORDER_FOLDER) {
+        this.AUDIO_RECORDER_FOLDER = AUDIO_RECORDER_FOLDER;
+    }
 
     public int getRECORDER_SAMPLERATE() {
         return RECORDER_SAMPLERATE;

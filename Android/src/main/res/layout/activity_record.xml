@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dip"
+    android:weightSum="1"
+
+    >
+
+
+    <EditText
+        android:layout_width="354dp"
+        android:layout_height="100dp"
+        android:id="@+id/tw1"
+        android:hint="please enter a name"
+        android:layout_margin="20dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStart"
+            android:background="@drawable/roundbtn"
+            android:text="START"
+            android:layout_weight="1.0"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStop"
+            android:background="@drawable/roundbnt2"
+            android:text="STOP"
+            android:layout_weight="1.0"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

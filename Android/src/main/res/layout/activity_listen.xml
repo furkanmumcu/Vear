@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dip"
+    android:weightSum="1"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listen via Phone"
+        android:textSize="19sp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <Button
+            android:layout_width="155dp"
+            android:background="@drawable/roundbtn"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStartP"
+            android:text="START "
+            android:layout_weight="1.0"/>
+
+        <Button
+            android:background="@drawable/roundbnt2"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStopP"
+            android:text="STOP "
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listen via Ears"
+        android:textSize="19sp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <Button
+            android:background="@drawable/roundbtn"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStartE"
+            android:text="START "
+            android:layout_weight="1.0"/>
+
+        <Button
+            android:background="@drawable/roundbnt2"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStopE"
+            android:text="STOP "
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbtn"
+        android:id="@+id/dummy"
+        android:text="LISTENED RECORDS"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:visibility="invisible"
+        android:clickable = "false"
+        android:layout_weight="0.02" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info:"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/listenservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listening via phone is on"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/ftpservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listening via Ears is on"
+        android:textSize="19sp" />
+</LinearLayout>

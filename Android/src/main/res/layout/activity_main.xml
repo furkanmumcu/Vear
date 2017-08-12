@@ -9,34 +9,42 @@
 
 
     <Button
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
         android:id="@+id/recordbtn"
-        android:text="Record"
+        android:background="@drawable/roundbtn3"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:text="Record" />
+
+    <Button
+        android:layout_width="155dp"
+        android:background="@drawable/roundbtn3"
+        android:layout_height="wrap_content"
+        android:id="@+id/listenbtn"
+        android:text="LISTEN"
         android:layout_gravity="center_horizontal"
         android:layout_margin="20dp"/>
 
 
+
     <Button
-        android:layout_width="145dp"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:id="@+id/recordingsbtn"
-        android:text="My recordings"
+        android:background="@drawable/roundbtn3"
+        android:id="@+id/recordsbtn"
+        android:text="RECORDS"
         android:layout_gravity="center_horizontal"
         android:layout_margin="20dp"
         android:layout_weight="0.02" />
+
+
     <Button
-        android:layout_width="145dp"
+        android:layout_width="155dp"
+        android:background="@drawable/roundbtn3"
         android:layout_height="wrap_content"
-        android:id="@+id/listenbtn"
-        android:text="Listen"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="20dp"/>
-    <Button
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/ftpp"
-        android:text="FTP"
+        android:id="@+id/settings"
+        android:text="SETTINGS"
         android:layout_gravity="center_horizontal"
         android:layout_margin="20dp"/>
 
